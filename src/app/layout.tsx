@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Minimalist Storefront',
-  description: 'Built with Autonomous Remote AI Studio',
+  title: 'MONO // ATELIER — Minimalist Objects & Curated Living',
+  description: 'A curated selection of precision-engineered workspace tools, acoustic audio, and minimalist essentials designed for focus and calm.',
+  keywords: ['minimalist storefront', 'workspace tools', 'minimalist design', 'desk setup', 'audio gear', 'ergonomics'],
 };
 
 export default function RootLayout({
@@ -12,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className="bg-slate-950 text-slate-100 min-h-screen">
+    <html lang="en" className="dark scroll-smooth">
+      <body className="bg-zinc-950 text-zinc-100 min-h-screen antialiased selection:bg-zinc-700 selection:text-white">
         {children}
       </body>
     </html>
